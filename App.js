@@ -5,6 +5,7 @@ import {
   SafeAreaView,
   Button,
   Alert,
+  StyleSheet,
 } from "react-native";
 
 export default function App() {
@@ -14,14 +15,14 @@ export default function App() {
   return (
     <>
       <StatusBar barStyle="light-content" />
-      <SafeAreaView>
-        <View>
+      <SafeAreaView style={estilos.container}>
+        <View style={estilos.cabecalho}>
           <Text>Topo/cabeçalho</Text>
         </View>
-        <View>
+        <View style={estilos.conteudo}>
           <Text>Conteúdo</Text>
         </View>
-        <View>
+        <View style={estilos.rodape}>
           <Text>Rodapé</Text>
         </View>
         <Button title="Dá uma tocada" color="red" onPress={vai} />
@@ -29,3 +30,22 @@ export default function App() {
     </>
   );
 }
+
+const estilos = StyleSheet.create({
+  container: {
+    backgroundColor: "lightyellow",
+    flex: 1,
+  },
+  cabecalho: {
+    backgroundColor: "lightblue",
+    flex: 0.6,
+  },
+  conteudo: {
+    backgroundColor: "darkorange",
+    flex: 4,
+  },
+  rodape: {
+    backgroundColor: "lightgreen",
+    flex: 0.7,
+  },
+});
