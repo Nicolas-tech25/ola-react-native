@@ -1,16 +1,16 @@
 import { StyleSheet } from "react-native";
 const estilos = StyleSheet.create({
   container: {
-    backgroundColor: "lightyellow",
+    backgroundColor: "#fff",
     flex: 1,
     fontSize: 1,
   },
   cabecalho: {
-    backgroundColor: "lightblue",
+    backgroundColor: "black",
     flex: 0.6,
   },
   conteudo: {
-    backgroundColor: "darkorange",
+    backgroundColor: "#d21404",
     flex: 4,
     width: "90%",
     marginLeft: "auto",
@@ -20,12 +20,23 @@ const estilos = StyleSheet.create({
     borderRadius: 10,
   },
   rodape: {
-    backgroundColor: "lightgreen",
+    backgroundColor: "#0492c2",
     flex: 0.7,
   },
-  titleText: {
+  textTitulo: {
     fontSize: 20,
     fontWeight: "bold",
+    color: "#fff",
+    margin: 10,
+  },
+  texto: {
+    color: "black",
+    padding: 5,
+    margin: 10,
+  },
+  botao: {
+    backgroundColor: "white",
+    color: "black",
   },
 });
 export default estilos;
